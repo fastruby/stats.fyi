@@ -1,0 +1,76 @@
+  <section id="page-wrapper">
+    <div id="sections">
+      <p>
+        <a href="https://github.com/fastruby/stats.fyi" title="Rails Stats FYI" target="_blank">Stats.fyi</a> is an open source application that can be used to share your <a href="https://github.com/fastruby/rails_stats" title="RailsStats GitHub Page" target="_blank">Rails Stats (`rake stats`)</a> results and compare them to other applications out there in the interwebs.
+      </p>
+
+      <div id="getting-started" class="section__content">
+        <h2>Getting Started</h2>
+
+        <p>You will need to use the `fast_ruby-rails_stats` gem in your Gemfile:</p>
+          <pre><code># Gemfile
+
+# ... 
+
+group :development do
+  gem 'fast_ruby-rails_stats'
+end
+
+# ... 
+          </code></pre>
+        </p>
+        <p>In order to share your results using this page, you can run `rake stats` like this:</p>
+        <pre><code>$ SHARE=true bundle exec rake stats
++----------------------+-------+-------+---------+---------+-----+-------+
+| Name                 | Lines |   LOC | Classes | Methods | M/C | LOC/M |
++----------------------+-------+-------+---------+---------+-----+-------+
+| Models               |    34 |    28 |       2 |       3 |   1 |     7 |
+| Jobs                 |     7 |     2 |       1 |       0 |   0 |     0 |
+| Controllers          |    84 |    65 |       3 |       3 |   1 |    19 |
+| Helpers              |    41 |    36 |       0 |       4 |   0 |     7 |
+| Javascripts          |   532 |   512 |       0 |      82 |   0 |     4 |
+| Configuration        |   397 |   106 |       1 |       0 |   0 |     0 |
+| Integration Tests    |    21 |    18 |       1 |       1 |   1 |    16 |
+| Test Support         |    10 |     6 |       1 |       0 |   0 |     0 |
+| Controller Tests     |    88 |    71 |       1 |       0 |   0 |     0 |
++----------------------+-------+-------+---------+---------+-----+-------+
+| Total                |  1214 |   844 |      10 |      93 |   9 |     7 |
++----------------------+-------+-------+---------+---------+-----+-------+
+  Code LOC: 749     Test LOC: 95     Code to Test Ratio: 1:0.1
+
+Shared at: https://stats.fastruby.io/1335ce1
+</code></pre>
+      </div>
+
+      <div id="contributing" class="section__content">
+        <h2>Contributing</h2>
+        <p>Bug reports and pull requests are welcome on GitHub at <a href=https://github.com/fastruby/stats.fyi
+            title="https://github.com/fastruby/stats.fyi" target="_blank">https://github.com/fastruby/stats.fyi</a>. </p>
+            
+        <p>This
+          project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere
+          to the <a href=https://github.com/fastruby/stats.fyi/blob/main/CODE_OF_CONDUCT.md title="Contributor Covenant "
+            target="_blank">Contributor Covenant</a> code of conduct.</p>
+      </div>
+
+      <div id="license" class="section__content">
+        <h2>License</h2>
+        <p>The gem is available as open source under the terms of the <a href=https://opensource.org/licenses/MIT
+            title="MIT License" target="_blank">MIT License</a>.</p>
+      </div>
+
+      <div id="code-of-conduct" class="section__content">
+        <h2>Code of Conduct</h2>
+        <p>Everyone interacting in the Stats.fyi project's codebases, issue trackers, chat rooms and mailing lists is
+          expected to follow the <a href="https://github.com/fastruby/stats.fyi/blob/main/CODE_OF_CONDUCT.md" title="code of conduct"
+            target="_blank">code of conduct</a>.</p>
+      </div>
+    
+      <div id="code-of-conduct" class="section__content">
+      <h2>Credits</h2>
+      <p>This project is heavily inspired by <a href="https://github.com/evanphx/benchmark.fyi" title="benchmark.fyi"
+      target="_blank">benchmark.fyi</a>. It is a fork of that project.</p>
+      </div>
+
+    </div>
+  </section>
